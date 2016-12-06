@@ -23,94 +23,93 @@
     </head>
 
     <body>
-    <div class="container">
-        <div class="row m-t-3">
-            <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                {{ content.text|parse }}
+        <div class="container">
+            <div class="row m-t-3">
+                <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    {{ content.text|parse }}
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer class="footer m-t-3 m-b-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-md-center text-muted">
-                        Seit {{ daysSince('2011-06-24 19:00:00') }} Tagen im Sattel &bull;
-                        <a href="#" data-toggle="modal" data-target="#impressModal">
+        <footer class="footer m-t-3 m-b-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-md-center text-muted">
+                            Seit {{ daysSince('2011-06-24 19:00:00') }} Tagen im Sattel &bull;
+                            <a href="#" data-toggle="modal" data-target="#impressModal">
+                                Impressum
+                            </a>
+                            &bull;
+                            <a href="http://sqi.be/v4px3">
+                                facebook
+                            </a>
+                            &bull;
+                            <a href="http://sqi.be/y1aw6">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="impressModal" tabindex="-1" role="dialog" aria-labelledby="impressModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="impressModalLabel">
                             Impressum
-                        </a>
-                        &bull;
-                        <a href="http://sqi.be/v4px3">
-                            facebook
-                        </a>
-                        &bull;
-                        <a href="http://sqi.be/y1aw6">
-                            GitHub
-                        </a>
+                        </h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>
+                            Angaben nach § 5 TMG:
+                        </p>
+
+                        <p>
+                            Malte Hübner
+                            <br />
+                            Mühlenaustieg 10
+                            <br />
+                            22523 Hamburg
+                        </p>
+
+                        <p>
+                            E-Mail: malte@caldera.cc
+                            <br />
+                            Telefon: 0700 11 864 833
+                        </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <div class="modal fade" id="impressModal" tabindex="-1" role="dialog" aria-labelledby="impressModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="impressModalLabel">
-                        Impressum
-                    </h4>
-                </div>
-
-                <div class="modal-body">
-                    <p>
-                        Angaben nach § 5 TMG:
-                    </p>
-
-                    <p>
-                        Malte Hübner
-                        <br />
-                        Mühlenaustieg 10
-                        <br />
-                        22523 Hamburg
-                    </p>
-
-                    <p>
-                        E-Mail: malte@caldera.cc
-                        <br />
-                        Telefon: 0700 11 864 833
-                    </p>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Piwik -->
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(["setCookieDomain", "*.criticalmass.tips"]);
-        _paq.push(["setDomains", ["*.criticalmass.tips"]]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="//piwik.caldera.cc/";
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
-            _paq.push(['setSiteId', '5']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <noscript><p><img src="//piwik.caldera.cc/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
-    <!-- End Piwik Code -->
-
+        <!-- Piwik -->
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(["setCookieDomain", "*.criticalmass.tips"]);
+            _paq.push(["setDomains", ["*.criticalmass.tips"]]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//piwik.caldera.cc/";
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setSiteId', '5']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <noscript><p><img src="//piwik.caldera.cc/piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+        <!-- End Piwik Code -->
     </body>
 </html>
 
