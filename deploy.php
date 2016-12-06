@@ -23,14 +23,14 @@ $deployer = new Deployer([
     ],
 
     // User to run the script as
-    'deployUser' => 'cmtips',
+    //'deployUser' => 'cmtips',
 
     // Git branch to reset to
     'branch' => 'master',
 
     // Directory of the repository
     'directory' => '/home/cmtips/www/',
-    
+
     // Path to the pull script
     // (You can provide your own script instead)
     'pullScriptPath' => __DIR__ . '/vendor/tmd/auto-git-pull/scripts/git-pull.sh',
